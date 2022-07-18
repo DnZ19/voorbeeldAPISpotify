@@ -9,8 +9,8 @@ app.set("view engine", "pug");
 app.use(express.static("public"));
 
 const redirect_uri = "http://localhost:3000/callback";
-const client_id = "";
-const client_secret = "";
+const client_id = "87bccbeb23114d44b788fd6cea0511b1";
+const client_secret = "2b6c6f0ac7bc45a8b23bb33510a6182b";
 
 global.access_token;
 
@@ -82,7 +82,7 @@ app.get("/recommendations", async (req, res) => {
 
   const params = new URLSearchParams({
     seed_artist: artist_id,
-    seed_genres: "rock",
+    seed_genres: "techno",
     seed_tracks: track_id,
   });
 
